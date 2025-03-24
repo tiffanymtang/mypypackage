@@ -34,3 +34,9 @@ jobs:
 
       - name: Build documentation
         run: poetry run make html --directory docs/
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/_build/html
