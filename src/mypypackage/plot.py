@@ -133,4 +133,4 @@ def plot_pairs(data, vars, color_by=None, corr_fontsize=10, **kwargs):
                 ax.set_xticklabels([])
                 ax.set_xlabel('')
 
-    plt.show()
+    return plt
