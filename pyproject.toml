@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "mypypackage"
+version = "0.1.0"
+description = "An example python package"
+authors = ["Tiffany Tang"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

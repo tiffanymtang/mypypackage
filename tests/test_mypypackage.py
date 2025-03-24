@@ -1,0 +1,1 @@
+from mypypackage import mypypackage
