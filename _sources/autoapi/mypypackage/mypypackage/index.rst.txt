@@ -1,0 +1,6 @@
+mypypackage.mypypackage
+=======================
+
+.. py:module:: mypypackage.mypypackage
+
+

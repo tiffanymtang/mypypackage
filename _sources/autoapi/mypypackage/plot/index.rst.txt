@@ -1,0 +1,46 @@
+mypypackage.plot
+================
+
+.. py:module:: mypypackage.plot
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   mypypackage.plot.plot_pairs
+
+
+Module Contents
+---------------
+
+.. py:function:: plot_pairs(data, vars, color_by=None, corr_fontsize=10, **kwargs)
+
+   Plot pairwise relationships between variables.
+
+   Building on seaborn's pairplot, this function shows the correlations on the
+   upper triangle for continuous variables and boxplots for categorical variables.
+
+   :param data: The data to plot
+   :type data: pd.DataFrame
+   :param vars: The variable names to plot. Should be column names in data
+   :type vars: list
+   :param color_by: The variable name to color by. Should be a column name in data
+   :type color_by: str
+   :param corr_fontsize: The font size for the correlation values
+   :type corr_fontsize: int
+   :param \*\*kwargs: Additional keyword arguments to pass to seaborn.pairplot
+
+   :returns: The seaborn PairGrid object
+   :rtype: sns.PairGrid
+
+   .. rubric:: Examples
+
+   >>> import seaborn as sns
+   >>> from mypypackage.plot import plot_pairs
+   >>> data = sns.load_dataset('iris')
+   >>> vars = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width']
+   >>> plot_pairs(data, vars, color_by='species')
+
+
