@@ -1,0 +1,29 @@
+mypypackage
+===========
+
+.. py:module:: mypypackage
+
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   /autoapi/mypypackage/mypypackage/index
+   /autoapi/mypypackage/plot/index
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   mypypackage.__version__
+
+
+Package Contents
+----------------
+
+.. py:data:: __version__
+
